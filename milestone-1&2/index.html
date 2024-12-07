@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="profile.JPEG" alt="Profile Picture" class="profile-pic">
+      <h1>SYED MUHAMMAD UMER</h1>
+      <p class="contact-info">📧 umershakir987@gmail.com | 📞 +923132711470</p>
+    </header>
+    
+    <section id="personal-info">
+      <h2>Personal Information</h2>
+      <p>software engineer with a passion for building innovative solutions. and currently styduing ing GIAIC</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor's in Software Engineering</strong> - Iqra University (2018-2022)</li>
+        <li><strong>School</strong> - Maryam Academy School (2016-2018)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>JavaScript, TypeScript, HTML, CSS</li>
+        <li>React, Next.js, Angular, Node.js</li>
+        <li>Database Management: MySQL, MongoDB</li>
+      </ul>
+    </section>
+
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+      <ul>
+        <li><strong>Frontend Developer</strong> - TechCorp (2022-Present)</li>
+        <li><strong>Intern</strong> - Innovative Solutions (2021-2022)</li>
+      </ul>
+    </section>
+
+    <div class="buttons">
+      <button onclick="toggleVisibility('skills')">Hide Skills Section</button>
+      <button onclick="toggleVisibility('work-experience')">Hide Work Experience Section</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
