@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+        <img src="logo.png" >
+
+        <h1 class="headii">Editable Resume Builder</h1> 
+        
+    </div>
+    <p class="para">(GIAIC MILESTONE #3)</p>
+    <form id="resume-form">
+      <label for="profile-img">Profile Picture:</label>
+      <input type="file" id="profile-img" accept="image/*">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" >
+
+      <label for="job-title">Job Title:</label>
+      <input type="text" id="job-title" >
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" >
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" >
+
+      <label for="profile-summary">Profile Summary:</label>
+      <textarea id="profile-summary" ></textarea>
+
+      <label for="education">Education:</label>
+      <textarea id="education" ></textarea>
+
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" >
+
+      <label for="work-experience">Work Experience:</label>
+      <textarea id="work-experience" ></textarea>
+
+      <div class="buttons">
+        <button type="button" id="generate-resume">Generate Resume</button>
+        <button type="button" id="clear-resume">Clear</button>
+      </div>
+    </form>
+
+    <div id="resume-output">
+      <h2>Generated Resume</h2>
+      <div id="resume-template" contenteditable="true">
+        <!-- Dynamic resume content will go here -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
